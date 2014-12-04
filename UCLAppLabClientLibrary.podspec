@@ -7,6 +7,9 @@ Pod::Spec.new do |spec|
     	'Niall Roche' => 'n.roche@ucl.ac.uk'
   	}
   	
+  	spec.homepage     = 'https://github.com/NoodlFroot/UCLAppLabClientLib-Test'
+  	spec.license      = { :type => 'BSD' }
+  	
   	spec.source = {
     	:git => 'https://github.com/NoodlFroot/UCLAppLabClientLib-Test.git',
 	    :tag => spec.version.to_s
