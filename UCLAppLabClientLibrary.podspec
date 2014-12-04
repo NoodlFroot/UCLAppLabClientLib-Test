@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   	}
   	
   	spec.homepage     = 'https://github.com/NoodlFroot/UCLAppLabClientLib-Test'
-  	spec.license      = { :type => 'BSD' }
+  	spec.license      = { :type => 'BSD', :file => 'LICENSE'  }
   	
   	spec.source = {
     	:git => 'https://github.com/NoodlFroot/UCLAppLabClientLib-Test.git',
