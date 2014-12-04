@@ -1,17 +1,21 @@
-Pod::Spec.new do |s|
-	s.name         = 'UCLAppLabClientLibrary'
-	s.version      = '1.0.0'
-	s.summary      = 'Client library for apps published on the UCL App Lab'
-	
-  	s.author = {
-    'Niall Roche' => 'n.roche@ucl.ac.uk'
+Pod::Spec.new do |spec|
+	spec.name         = 'UCLAppLabClientLibrary'
+	spec.version      = '1.0.0'
+	spec.summary      = 'Client library for apps published on the UCL App Lab'
+	spec.platform		= :ios
+  	spec.author = {
+    	'Niall Roche' => 'n.roche@ucl.ac.uk'
   	}
   	
-  	s.source = {
-    :git => 'https://github.com/NoodlFroot/UCLAppLabClientLib-Test.git',
-    :tag => '1.0.0'
+  	spec.source = {
+    	:git => 'https://github.com/NoodlFroot/UCLAppLabClientLib-Test.git',
+	    :tag => 'spec.version.to_s'
   	}
   	
-  	s.source_files = 'Source/*.{h,m}'
-  	s.dependency     'AdMob'
+  	spec.ios.vendored_frameworks = 'TestFramework.framework'
+
+  	spec.dependency	'UXCam'
+  	spec.dependency	'UICKeyChainStore'
+  	
+  	spec.requires_arc = true
 end
