@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   	
   	spec.source = {
     	:git => 'https://github.com/NoodlFroot/UCLAppLabClientLib-Test.git',
-	    :tag => 'spec.version.to_s'
+	    :tag => spec.version.to_s
   	}
   	
   	spec.ios.vendored_frameworks = 'TestFramework.framework'
